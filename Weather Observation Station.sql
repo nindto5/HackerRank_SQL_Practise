@@ -33,7 +33,41 @@ SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY NOT RLIKE '^[AEIOU]';
 
+-- 07. Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY NOT RLIKE '^[AEIOU]';
+
 -- 07.Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
 SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY NOT RLIKE '[AEIOU]$';
+
+-- 08. Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY NOT RLIKE '^[AEIOU].*[AEIOU]$'
+
+-- 09. Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY NOT RLIKE '^[AEIOU]'
+  AND CITY NOT RLIKE '[AEIOU]$';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
